@@ -1,0 +1,21 @@
+{
+    "name": "jfath/cc-sync",
+    "description": "Sync chambe-carnet workflow",
+    "type": "project",
+    "autoload": {
+        "psr-4": {
+            "": ["src/"]
+        }
+    },
+    "require": {
+        "guzzlehttp/guzzle": "^7.9",
+        "symfony/options-resolver": "^7.1"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Jerome Fath",
+            "email": "contact@jeromefath.com"
+        }
+    ]
+}

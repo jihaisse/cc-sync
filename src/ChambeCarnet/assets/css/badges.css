@@ -1,0 +1,75 @@
+@font-face {
+    font-family: BlanchCaps;
+    src: url("../fonts/BLANCH_CAPS.otf");
+}
+* {
+    font-family: sans-serif;
+}
+.badge {
+    display: flex;
+}
+.badge .badge-part {
+    position: relative;
+    width: 6cm;
+    height: 8.5cm;
+}
+.badge .badge-part img {
+    max-width: 100%;
+}
+.badge .content {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+.badge .content > span {
+    color: #ffffff;
+    display: block;
+    text-align: center;
+    -webkit-print-color-adjust: exact;
+}
+.badge .content > span.firstname {
+    font-family: 'BlanchCaps', sans-serif;
+    text-transform: uppercase;
+    font-size: 4.5em;
+    line-height: 50px;
+    margin-top: 20%;
+}
+.badge .content > span.lastname {
+    font-family: 'BlanchCaps', sans-serif;
+    text-transform: uppercase;
+    font-size: 3em;
+    line-height: 35px;
+    margin-bottom: 10px;
+}
+.badge .content > span.function {
+    margin-top: 20px;
+    font-size: 12px;
+    font-weight: 300;
+    font-style: italic;
+}
+.badge .content > span.company {
+  font-size: 12px;
+  font-weight: 600;
+  font-style: italic;
+}
+.badge .content > span.event {
+    font-weight: 600;
+    font-size: 12px;
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    bottom: 21%;
+}
+@media print {
+    .badges .badge:nth-child(3n) {
+        page-break-after: always;
+    }
+    .badge .content > span {
+        color: #ffffff;
+        display: block;
+        text-align: center;
+        -webkit-print-color-adjust: exact !important;
+    }
+}
